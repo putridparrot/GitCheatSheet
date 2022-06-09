@@ -24,7 +24,6 @@ Git remote
 |---------|-------------|
 | git push | Push changes to a remote repository |
 | git pull | Pull changes from a remote repository |
-| git pull | Pull changes from a remote repository |
 
 Git repository status
 
