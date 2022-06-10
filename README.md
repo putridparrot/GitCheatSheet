@@ -1,4 +1,4 @@
-# Git CheatSheet
+# Git Cheat Sheet
 A list of useful git CLI commands.
 
 Git create a repository
@@ -9,7 +9,7 @@ Git create a repository
 | git clone https://github.com/putridparrot/GitCheatSheet.git | Clone a repository from a remote repo |
 
 
-Git branches
+Branches
 
 | Command | Description |
 |---------|-------------|
@@ -22,12 +22,32 @@ Git branches
 | git branch -d branch-name | Delete a branch which has been fully merge with upstream |
 | git branch -D branch-name | Force delete a branch whether merged or now |
 
-
-Git tags
+Switching branches
 
 | Command | Description |
 |---------|-------------|
-| git tags | List the tags within the repository |
+| git checkout branch-name | Switch/checkout a branch using its branch-name |
+| git checkout - | Switch/checkout the previous checked out branch |
+
+Tags
+
+_Tags are usually used to store the state of code a specific point. The most obvious use is when we release new versions of our code we tag the release so we have a tag with the name v1.0.1 (for example). Meaning if we need to review the released code
+we can simply checkout our tags._
+
+| Command | Description |
+|---------|-------------|
+| git tag | List the tags within the repository |
+| git fetch --all --tags | Fetch all tags from a remote repository |
+| git tag -d v1.0.1 | Delete a tag named v1.0.1 |
+
+Stash
+
+_Stash allows us to store changes temporarily within "stash". For example we're midway through changes in our code and need to stash the changes whilst we revert switch branches, then when we switch back we can pop from the stash to get back our code without the need to commit partially completed work._
+
+| Command | Description |
+|---------|-------------|
+| git tag | List the tags within the repository |
+
 
 Git remote
 
@@ -36,20 +56,20 @@ Git remote
 | git push | Push changes to a remote repository |
 | git pull | Pull changes from a remote repository |
 
-Git repository status
+Repository status
 
 | Command | Description |
 |---------|-------------|
 | git status | Displays information about the current repo status |
 
 
-Git basic commands
+Some basic commands
 
 | Command | Description |
 |---------|-------------|
 | git --version | Displays the current git version |
 
-Other useful commands
+Other useful commands/combinations of commands
 
 | Command | Description |
 |---------|-------------|
