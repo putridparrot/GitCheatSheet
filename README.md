@@ -5,8 +5,8 @@ Git create a repository
 
 | Command | Description |
 |---------|-------------|
-| git init | Initialize a repository locally |
-| git clone https://github.com/putridparrot/GitCheatSheet.git | Clone a repository from a remote repo |
+| git init {directory name} | Initialize a repository locally |
+| git clone {repository url} | Clone a repository from a remote repo to your local machine |
 
 
 Branches
@@ -48,22 +48,46 @@ _Stash allows us to store changes temporarily within "stash". For example we're 
 |---------|-------------|
 | git tag | List the tags within the repository |
 
+Rebase
+
+_Rebasing your branch basically rolls back your changes, applies the rebase changes then adds your changes back. This
+is often used in place of merging if, for example, the branch you have branched from has additional changes to it and you
+want to or need to bring those changes into your branch._
+
+| Command | Description |
+|---------|-------------|
+| git rebase {branch} | Rebases the current branch with the {branch} |
+| git rebase --continue | When rebasing, after any conflicts are resolved, run this command to contiue the rebase |
+
+
+Logs
+
+| Command | Description |
+|---------|-------------|
+| git log | List the log entries within the repository |
+| git log  -{count} | List the last {count} log entries |
+
 
 Git remote
+
+_As git is a distributed source control system, we need ways to get changes from remote repos or push changes to them, whether
+the remote repository is centralized, such as github or on another developers machine._
 
 | Command | Description |
 |---------|-------------|
 | git push | Push changes to a remote repository |
 | git pull | Pull changes from a remote repository |
+| git fetch | Fetch changes from a remote repository without pulling them |
+| git fetch -p | Fetch changes and prune/delete any remote deleted branchs etc. |
 
-Repository status
+Status
 
 | Command | Description |
 |---------|-------------|
 | git status | Displays information about the current repo status |
 
 
-Some basic commands
+Basic Commands
 
 | Command | Description |
 |---------|-------------|
