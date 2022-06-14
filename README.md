@@ -80,6 +80,15 @@ the remote repository is centralized, such as github or on another developers ma
 | git fetch | Fetch changes from a remote repository without pulling them |
 | git fetch -p | Fetch changes and prune/delete any remote deleted branchs etc. |
 
+Differences
+
+| Command | Description |
+|---------|-------------|
+| git diff HEAD | Get the differences between your current code and last commit |
+| git diff --cached | Get the differences between your current staged and last commit |
+| git diff @{upstream} | Get the differences between your local branch and remote |
+
+
 Status
 
 | Command | Description |
