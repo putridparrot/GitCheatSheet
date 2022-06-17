@@ -5,8 +5,8 @@ Git create a repository
 
 | Command | Description |
 |---------|-------------|
-| git init {directory name} | Initialize a repository locally |
-| git clone {repository url} | Clone a repository from a remote repo to your local machine |
+| git init _&lt;directory name&gt;_ | Initialize a repository locally |
+| git clone _&lt;repository url&gt;_ | Clone a repository from a remote repo to your local machine |
 
 
 Branches
@@ -56,7 +56,7 @@ want to or need to bring those changes into your branch._
 
 | Command | Description |
 |---------|-------------|
-| git rebase {branch} | Rebases the current branch with the {branch} |
+| git rebase _&lt;branch&gt;_ | Rebases the current branch with the {branch} |
 | git rebase --continue | When rebasing, after any conflicts are resolved, run this command to contiue the rebase |
 
 
@@ -65,7 +65,7 @@ Logs
 | Command | Description |
 |---------|-------------|
 | git log | List the log entries within the repository |
-| git log  -{count} | List the last {count} log entries |
+| git log  -_&lt;count&gt;_ | List the last _count_ log entries |
 
 
 Git remote
@@ -78,7 +78,7 @@ the remote repository is centralized, such as github or on another developers ma
 | git push | Push changes to a remote repository |
 | git pull | Pull changes from a remote repository |
 | git fetch | Fetch changes from a remote repository without pulling them |
-| git fetch -p | Fetch changes and prune/delete any remote deleted branchs etc. |
+| git fetch -p | Fetch changes and prune/delete any remote deleted branches etc. |
 
 Differences
 
@@ -87,6 +87,16 @@ Differences
 | git diff HEAD | Get the differences between your current code and last commit |
 | git diff --cached | Get the differences between your current staged and last commit |
 | git diff @{upstream} | Get the differences between your local branch and remote |
+
+Cherry Picking
+
+_Pick commits by their references and add to the current branch. This is a useful technique in situations
+where a branch which you don't want to go live yet, had code that you need to pick out of that branch into
+another one to go live with OR maybe you just committed changes to the wrong branch._
+
+| Command | Description |
+|---------|-------------|
+| git cherry-pick _&lt;commit-ref&gt;_ | Cherry picks using the _commit-ref_ (the SHA) into the current branch HEAD |
 
 
 Status
