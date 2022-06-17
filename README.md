@@ -17,16 +17,16 @@ Branches
 | git branch --all | List the branches within the repository along with remotes |
 | git branch --verbose | List the branches within the repository along with lastest commit |
 | git branch -vv | List the branches within the repository along with lastest commit as well as origin |
-| git checkout -b branch-name | Create and checkout a branch with the branch-name |
+| git checkout -b _&lt;branch-name&gt;_ | Create and checkout a branch with the branch-name |
 | git branch branch-name | Create a branch but does not checkout |
-| git branch -d branch-name | Delete a branch which has been fully merge with upstream |
-| git branch -D branch-name | Force delete a branch whether merged or now |
+| git branch -d _&lt;branch-name&gt;_ | Delete a branch which has been fully merge with upstream |
+| git branch -D _&lt;branch-name&gt;_ | Force delete a branch whether merged or now |
 
 Switching branches
 
 | Command | Description |
 |---------|-------------|
-| git checkout branch-name | Switch/checkout a branch using its branch-name |
+| git checkout _&lt;branch-name&gt;_ | Switch/checkout a branch using its branch-name |
 | git checkout - | Switch/checkout the previous checked out branch |
 
 Tags
@@ -56,7 +56,7 @@ want to or need to bring those changes into your branch._
 
 | Command | Description |
 |---------|-------------|
-| git rebase _&lt;branch&gt;_ | Rebases the current branch with the {branch} |
+| git rebase _&lt;branch&gt;_ | Rebases the current branch with the _branch_ |
 | git rebase --continue | When rebasing, after any conflicts are resolved, run this command to contiue the rebase |
 
 
