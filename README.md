@@ -8,6 +8,14 @@ Git create a repository
 | git init _&lt;directory name&gt;_ | Initialize a repository locally |
 | git clone _&lt;repository url&gt;_ | Clone a repository from a remote repo to your local machine |
 
+Staging and Committing
+
+_Git works on the basis of having a staging area whereby changes are "staged" and committed to a branch._
+
+| Command | Description |
+|---------|-------------|
+| git add _&lt;file(s)-or-directory&gt;_ | Adds files or a directory to the staging area |
+| git commit -m "_&lt;message&gt;_" | Commits staged changes with the supplied message |
 
 Branches
 
