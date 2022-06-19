@@ -29,6 +29,14 @@ Switching branches
 | git checkout _&lt;branch-name&gt;_ | Switch/checkout a branch using its branch-name |
 | git checkout - | Switch/checkout the previous checked out branch |
 
+Revert/Reset
+
+| Command | Description |
+|---------|-------------|
+| git restore _&lt;file-name&gt;_ | Discard changes int the working directory |
+| git reset _&lt;file-name&gt;_ | Removes the _file-name_ from the staging area. Does not remove from the working directory |
+
+
 Tags
 
 _Tags are usually used to store the state of code a specific point. The most obvious use is when we release new versions of our code we tag the release so we have a tag with the name v1.0.1 (for example). Meaning if we need to review the released code
@@ -47,6 +55,7 @@ _Stash allows us to store changes temporarily within "stash". For example we're 
 | Command | Description |
 |---------|-------------|
 | git tag | List the tags within the repository |
+| git push _&lt;remote&gt;_ --tags | Tags aren't automaticalled pushed to the remote, use this command to push the tags |
 
 Rebase
 
@@ -79,6 +88,7 @@ the remote repository is centralized, such as github or on another developers ma
 | git pull | Pull changes from a remote repository |
 | git fetch | Fetch changes from a remote repository without pulling them |
 | git fetch -p | Fetch changes and prune/delete any remote deleted branches etc. |
+| git remote show origin | Show what the fetch and push remote is set to along with remote branches |
 
 Differences
 
