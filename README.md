@@ -29,6 +29,7 @@ Branches
 | git branch branch-name | Create a branch but does not checkout |
 | git branch -d _&lt;branch-name&gt;_ | Delete a branch which has been fully merge with upstream |
 | git branch -D _&lt;branch-name&gt;_ | Force delete a branch whether merged or now |
+| git branch -m _&lt;new-name&gt;_ | Change the name of the current branch to _new-name_ |
 
 Switching branches
 
@@ -97,6 +98,7 @@ the remote repository is centralized, such as github or on another developers ma
 | git fetch | Fetch changes from a remote repository without pulling them |
 | git fetch -p | Fetch changes and prune/delete any remote deleted branches etc. |
 | git remote show origin | Show what the fetch and push remote is set to along with remote branches |
+| git branch --unset-upstream | If the upstream has gone, then from your branch you can remove the upstream 'link' |
 
 Differences
 
