@@ -44,6 +44,7 @@ Revert/Reset
 |---------|-------------|
 | git restore _&lt;file-name&gt;_ | Discard changes int the working directory |
 | git reset _&lt;file-name&gt;_ | Removes the _file-name_ from the staging area. Does not remove from the working directory |
+| git reset --soft HEAD~1 | Resets the HEAD the commit - 1 (~1). --soft will keep changes and stage them, --hard will destroy changes |
 
 
 Tags
@@ -124,6 +125,15 @@ Status
 | Command | Description |
 |---------|-------------|
 | git status | Displays information about the current repo status |
+
+
+Configuration
+
+| Command | Description |
+|---------|-------------|
+| git config --global user.name | Displays the gobal configured user name |
+| git config --global user.email | Displays the gobal configured email for the user |
+
 
 
 Basic Commands
