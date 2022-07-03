@@ -30,6 +30,7 @@ Branches
 | git branch -d _&lt;branch-name&gt;_ | Delete a branch which has been fully merge with upstream |
 | git branch -D _&lt;branch-name&gt;_ | Force delete a branch whether merged or now |
 | git branch -m _&lt;new-name&gt;_ | Change the name of the current branch to _new-name_ |
+| git branch --show-current | Shows the current checked out branch |
 
 Switching branches
 
