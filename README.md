@@ -101,6 +101,8 @@ the remote repository is centralized, such as github or on another developers ma
 | git fetch -p | Fetch changes and prune/delete any remote deleted branches etc. |
 | git remote show origin | Show what the fetch and push remote is set to along with remote branches |
 | git branch --unset-upstream | If the upstream has gone, then from your branch you can remove the upstream 'link' |
+| git remote -v | Lists in verbose form your fetch and push remote/origin for your local repo. |
+| git remote set-url origin _url_ | Sets the origin for your local repository |
 
 Differences
 
@@ -134,7 +136,6 @@ Configuration
 |---------|-------------|
 | git config --global user.name | Displays the gobal configured user name |
 | git config --global user.email | Displays the gobal configured email for the user |
-
 
 
 Basic Commands
